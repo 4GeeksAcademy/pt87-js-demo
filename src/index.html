@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
@@ -9,19 +9,26 @@
     <!-- Fontawesome is our recomended library for icons -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
     <div class="container-fluid pt-3">
       <h1>Books to Reread:</h1>
-      <div id="books" class="container" aria-description="This is an HTML property!"></div>
+      <div
+        id="books"
+        class="container d-flex"
+        aria-description="This is an HTML property!"
+      ></div>
       <div class="d-flex justify-content-between mb-5">
-        <button id="decr" class="btn btn-primary">&lt;--</button>
-        <h1><span id="page-badge" class="badge text-bg-secondary">1</span></h1>
-        <button id="incr" class="btn btn-primary">--&gt;</button>
+        <button id="page_down" class="btn btn-primary">&lt;--</button>
+        <h1>
+          <span id="page-num-badge" class="badge text-bg-secondary">1</span>
+        </h1>
+        <button id="page_up" class="btn btn-primary">--&gt;</button>
       </div>
     </div>
 

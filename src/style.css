@@ -1,7 +1,12 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-.text-bg-dork * {
+.text-bg-dork :is(
+    .card-body,
+    .list-group,
+    .card-footer
+) {
     background: rgba(0, 0, 0, 0.75);
     padding: 0.25rem;
     border-radius: 0.5rem;
+    list-style: none;
 }
